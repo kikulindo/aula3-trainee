@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>aula3</title>
+  </head>
+  <body>
+    <input name="valor" type="text" id="valor" value="1" size="5" maxlength="5">
+<p>
+    <input type="button" id="btn_menos" name="btn_menos"  value="-" onclick="subtrai_campo();">
+    <input type="button" id="btn_mais" name="btn_mais"  value="+" onclick="soma_campo();" >
+</p>
+  </body>
+<script>
+  function soma_campo()
+  {
+  document.getElementById("valor").value=parseInt(document.getElementById("valor").value)+1;
+  }
+  function subtrai_campo()
+  {
+  document.getElementById("valor").value=document.getElementById("valor").value-1;
+  }
+</script>
+  </body>
+</html>
